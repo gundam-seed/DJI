@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<!-- 引入4个文件,必须注意导入顺序 -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="..css/comm.css">
+<style>
+    *{margin: 0;padding:0;}
+    #demo{
+        width:500px;height:584px;
+        float: left;
+        display: inline;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {  
+         width:24px;height:44px;
+         top:46%;
+       border-radius:0.25rem;
+        background-color:#aaa;
+    }
+    .carousel-indicators li{
+        width:0.8rem;height: 0.8rem;
+        background:#fff;
+        border-radius:50%
+
+    }
+    .carousel-indicators .active{
+        background:#0aa1ed;
+    }
+    #d2{
+        width:500px;height:584px;
+        background-color: #fff;
+        display: inline;
+        float: left;
+    }
+    .title{
+        width:300px;height: 45px;
+        color:#3b3e40;
+        font-weight:500;
+        font-size: 30px;
+        text-align:center;
+        margin: 0 auto;
+    }
+    .d-input{
+        width:300px;height: 68px;
+        margin: 0 auto;
+    }
+    .md-input{
+        width:100%;height: 44px;
+        padding:20px 0 0 10px;
+        display: block;
+        font-size: 1px;
+        line-height: 24px;
+    }
+    .lg-password{
+        width: 300px;height: 68px;
+        margin: 0 auto;
+    }
+    .ma-password{
+        widows: 300px;height: 48px;
+        border: 1px ##707473;
+    }
+    .md-password{
+        width:178px;  height: 44px;
+        padding: 20px 0 0 10px;
+        display: block;
+        font-size: 1px;
+        line-height: 24px;
+        border:none;
+        float: left;
+    }
+    .a1>a{
+        text-decoration:none;
+        width: 60px;height: 17px;
+        font-size: 12px;
+        line-height: 48px;
+    }
+    .a2{
+        width: 300px;height: 48px;
+        margin: 0 auto;
+    }
+    .a2>a{
+        width:100%;
+        color:#fff;
+        background:#44a8f2;
+        border:1px solid #44a8f2;
+        text-decoration: none;
+        font-size: 16px;
+        display:inline-block;
+        text-align:center;
+    }
+    .a3{
+        width: 300px;height: 24px;
+        margin: 0 auto;
+    }
+    .a3>a{
+        width:84.39px;height: 22px;
+        text-decoration:none;
+        font-size:16px;
+        margin-left:105px;
+    }
+    .line{
+        width:300px;height:54px;
+    }
+    .bg-orange{
+        width:176px;height: 54px;
+        color:#707473;
+        font-size:16px;
+        margin-left: 167px;
+    }
+    .wei{
+        width:300px;height:48px;
+        margin: 0 auto;
+    }
+    .wei>button{
+        border:none;
+        width:100%;
+        background: #47b247;
+    }
+    .wei>button>a{
+        width:32px;height: 24px;
+        color: #fff;
+        margin: 0 auto;
+    }
+    #d3{
+        width:1000px;height: 92px;
+        position:relative;
+    }
+</style>
+</head>
+<body>
+    
+        <div id="demo" class="carousel" data-ride="carousel">
+        <!-- 轮播图部分carousel-inner -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="\dji\1.e61fc72.jpg" class="w-100 h-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="\dji\2.643c4c1.jpg" class="w-100 h-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="\dji\3.61f61fa.jpg" class="w-100 h-100">
+                </div>
+            <!-- 左右箭头 -->
+            <a data-slide="prev" href="#demo" class="carousel-control-prev">
+               <span class="carousel-control-prev-icon"></span>
+           </a>
+           <a deta-slide="next" href="#demo" class="carousel-control-next">
+               <span class="carousel-control-next-icon"></span>
+           </a>
+           <!-- 轮播指示器 -->
+           <ul class="carousel-indicators">
+            <li deta-target="#demo" data-slide-to="0"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+           </ul>
+        </div>
+        <!-- 登录部分 -->
+        <div id="d2">
+            <div class="title">登录</div>
+            <!-- 账号 -->
+            <div class="d-input">
+                    <input type="text" class="md-input" placeholder="邮箱/手机*"> 
+            </div>
+            <!-- 输入密码 -->
+            <div class="lg-password">
+                <div class=ma-password>
+                    <input type="password" href="" placeholder="密码*" name="" class="md-password">
+                    <div class="a1"><a href="#">忘记密码?</a></div>
+                </div>
+            </div>
+            <div class="a2">
+                <a href="#" class="">登录</a></div>
+            <div class="a3">
+                <a href="#">注册DJI账号</a>
+            </div>
+             <div class=line>
+                <div class="bg-orange">或使用第三方账号登录</div>
+            </div>
+                <!-- 微信登录 -->
+             <div class="wei">
+                <button class=""><a href="#">微信</a></button>
+             </div>
+        </div>>
+    <!-- 页脚 -->
+    <div id="d3">
+        <div>Copyright © 2019 DJI All Rights Reserved.
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+        <div>如果您有任何关于DJI账户的问题,
+            <a href="">0</a>
+        </div>
+        <div>
+            <a href="#" class="">粤ICP备12022215号-11</a>
+        </div>
+    </div>
+</body>
+</html>
